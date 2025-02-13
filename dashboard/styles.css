@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Layout do dashboard */
+.dashboard {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar content";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+
+/* Cabeçalho fixo */
+.header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Barra lateral (sidebar) */
+.sidebar {
+    grid-area: sidebar;
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    top: 60px; /* Ajuste para a altura do header */
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* Área de conteúdo dinâmica */
+.content {
+    grid-area: content;
+    padding: 20px;
+    margin-top: 60px; /* Ajuste para a altura do header */
+}
+
+/* Cartões */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card .price {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-areas:
+            "header"
+            "content";
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none; /* Oculta a sidebar em telas menores */
+    }
+
+    .content {
+        margin-top: 60px; /* Ajuste para a altura do header */
+    }
+}
+
+/* Esconder seções inicialmente */
+.hidden {
+    display: none;
+}
