@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Estoque - Peixaria do Pirarucu</h1>
+        
+        <div class="form-container">
+            <h2>Adicionar Produto</h2>
+            <form id="add-product-form">
+                <label for="product-name">Nome do Produto:</label>
+                <input type="text" id="product-name" name="product-name" required>
+                
+                <label for="product-quantity">Quantidade:</label>
+                <input type="number" id="product-quantity" name="product-quantity" required>
+                
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+        
+        <div class="stock-list">
+            <h2>Estoque Atual</h2>
+            <table id="stock-table">
+                <thead>
+                    <tr>
+                        <th>Nome do Produto</th>
+                        <th>Quantidade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
