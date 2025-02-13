@@ -8,7 +8,7 @@ Este repositório contém os seguintes projetos:
 
 Blog - Uma plataforma simples para publicação de artigos.
 
-Dashboard - Um painel de controle para visualização de dados de uma loja.
+Dashboard - Um painel de controle para visualização de produtos de uma loja.
 
 Estoque - Sistema de gerenciamento de estoque.
 
