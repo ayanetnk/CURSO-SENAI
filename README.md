@@ -1,6 +1,5 @@
-📚 Repositório de Projetos das Aulas
+📚 Bem-vindo ao repositório contendo os projetos desenvolvidos durante as aulas do curso de HTML, CSS e JavaScript do SENAI! Aqui você encontrará diferentes aplicações para prática e aprendizado.
 
-Bem-vindo ao repositório contendo os projetos desenvolvidos durante as aulas! Aqui você encontrará diferentes aplicações para prática e aprendizado.
 
 📂 Projetos Incluídos
 
@@ -16,6 +15,7 @@ Portfólio 1 - Um site de portfólio pessoal.
 
 Portfólio 2 - Outra variação de site de portfólio com um layout diferente e projetos.
 
+
 🚀 Como Utilizar
 
 Para clonar este repositório em sua máquina, utilize o seguinte comando:
@@ -24,15 +24,17 @@ git clone https://github.com/seu-usuario/seu-repositorio.git
 
 Acesse a pasta de cada projeto para ver mais detalhes sobre a instalação e execução.
 
+
 🛠 Tecnologias Utilizadas
 
 Os projetos podem conter diferentes tecnologias, como:
 
-HTML 
+HTML5
 
-CSS 
+CSS3 
 
 JavaScript
+
 
 📌 Contribuição
 
@@ -44,8 +46,11 @@ Crie uma nova branch com sua contribuição.
 
 Envie um pull request.
 
+
 📄 Licença
 
 Este repositório está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
 
 Mantenha-se atualizado com os novos projetos e aprimoramentos! 🚀
+
+Desenvolvido por Andressa Ayane Tanaka.
